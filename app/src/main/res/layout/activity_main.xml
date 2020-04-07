@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción"
+        android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de captura"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+        android:id="@+id/edit_fechaCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Fecha captura"
+        android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de entrega"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+        android:id="@+id/edit_fechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Fecha entrega"
+        android:inputType="date" />
+
+        <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:minDate="01/01/2020" />
+
+        <Button
+            android:id="@+id/btn_capturar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CAPTURAR ACTIVIDAD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Evidencia"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_dialog" />
+
+            <Button
+                android:id="@+id/btn_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir foto" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_irBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR EVIDENCIAS" />
+
+    </LinearLayout>
+
+</ScrollView>
